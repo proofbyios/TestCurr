@@ -12,6 +12,11 @@
 		FA2FCDB321F8AA69009D6A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2FCDB121F8AA69009D6A3A /* Main.storyboard */; };
 		FA2FCDB521F8AA6A009D6A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2FCDB421F8AA6A009D6A3A /* Assets.xcassets */; };
 		FA2FCDB821F8AA6A009D6A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2FCDB621F8AA6A009D6A3A /* LaunchScreen.storyboard */; };
+		FA2FCDC821F8AE8D009D6A3A /* PrivatBankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2FCDC621F8AE8D009D6A3A /* PrivatBankTableViewCell.swift */; };
+		FA2FCDC921F8AE8D009D6A3A /* PrivatBankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2FCDC721F8AE8D009D6A3A /* PrivatBankTableViewCell.xib */; };
+		FA2FCDCC21F8AE9F009D6A3A /* NBUTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2FCDCA21F8AE9F009D6A3A /* NBUTableViewCell.swift */; };
+		FA2FCDCD21F8AE9F009D6A3A /* NBUTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2FCDCB21F8AE9F009D6A3A /* NBUTableViewCell.xib */; };
+		FA2FCDCF21F8B004009D6A3A /* GlobalScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2FCDCE21F8B004009D6A3A /* GlobalScope.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		FA2FCDB421F8AA6A009D6A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA2FCDB721F8AA6A009D6A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA2FCDB921F8AA6A009D6A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2FCDC621F8AE8D009D6A3A /* PrivatBankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatBankTableViewCell.swift; sourceTree = "<group>"; };
+		FA2FCDC721F8AE8D009D6A3A /* PrivatBankTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivatBankTableViewCell.xib; sourceTree = "<group>"; };
+		FA2FCDCA21F8AE9F009D6A3A /* NBUTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBUTableViewCell.swift; sourceTree = "<group>"; };
+		FA2FCDCB21F8AE9F009D6A3A /* NBUTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBUTableViewCell.xib; sourceTree = "<group>"; };
+		FA2FCDCE21F8B004009D6A3A /* GlobalScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalScope.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,43 @@
 		FA2FCDAC21F8AA69009D6A3A /* TestCurr */ = {
 			isa = PBXGroup;
 			children = (
-				FA2FCDAD21F8AA69009D6A3A /* AppDelegate.swift */,
-				FA2FCDAF21F8AA69009D6A3A /* ViewController.swift */,
 				FA2FCDB121F8AA69009D6A3A /* Main.storyboard */,
+				FA2FCDC421F8AE43009D6A3A /* Models */,
+				FA2FCDC121F8AE1E009D6A3A /* Controllers */,
 				FA2FCDB421F8AA6A009D6A3A /* Assets.xcassets */,
 				FA2FCDB621F8AA6A009D6A3A /* LaunchScreen.storyboard */,
 				FA2FCDB921F8AA6A009D6A3A /* Info.plist */,
 			);
 			path = TestCurr;
+			sourceTree = "<group>";
+		};
+		FA2FCDC121F8AE1E009D6A3A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA2FCDAF21F8AA69009D6A3A /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA2FCDC421F8AE43009D6A3A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA2FCDCE21F8B004009D6A3A /* GlobalScope.swift */,
+				FA2FCDAD21F8AA69009D6A3A /* AppDelegate.swift */,
+				FA2FCDC521F8AE4D009D6A3A /* Cells */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA2FCDC521F8AE4D009D6A3A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA2FCDC621F8AE8D009D6A3A /* PrivatBankTableViewCell.swift */,
+				FA2FCDC721F8AE8D009D6A3A /* PrivatBankTableViewCell.xib */,
+				FA2FCDCA21F8AE9F009D6A3A /* NBUTableViewCell.swift */,
+				FA2FCDCB21F8AE9F009D6A3A /* NBUTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2FCDB821F8AA6A009D6A3A /* LaunchScreen.storyboard in Resources */,
+				FA2FCDCD21F8AE9F009D6A3A /* NBUTableViewCell.xib in Resources */,
+				FA2FCDC921F8AE8D009D6A3A /* PrivatBankTableViewCell.xib in Resources */,
 				FA2FCDB521F8AA6A009D6A3A /* Assets.xcassets in Resources */,
 				FA2FCDB321F8AA69009D6A3A /* Main.storyboard in Resources */,
 			);
@@ -136,7 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2FCDB021F8AA69009D6A3A /* ViewController.swift in Sources */,
+				FA2FCDCF21F8B004009D6A3A /* GlobalScope.swift in Sources */,
+				FA2FCDCC21F8AE9F009D6A3A /* NBUTableViewCell.swift in Sources */,
 				FA2FCDAE21F8AA69009D6A3A /* AppDelegate.swift in Sources */,
+				FA2FCDC821F8AE8D009D6A3A /* PrivatBankTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
