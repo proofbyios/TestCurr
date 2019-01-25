@@ -19,30 +19,41 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXU-3j-iTp">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXU-3j-iTp">
                         <rect key="frame" x="16" y="11" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXP-LJ-Z04">
-                        <rect key="frame" x="270" y="0.0" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXP-LJ-Z04">
+                        <rect key="frame" x="260" y="2" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndj-qY-Y9Y">
-                        <rect key="frame" x="270" y="22" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndj-qY-Y9Y">
+                        <rect key="frame" x="260" y="20" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="oXP-LJ-Z04" secondAttribute="trailing" constant="18" id="2eG-We-n0O"/>
+                    <constraint firstItem="oXP-LJ-Z04" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="Aii-ln-kj2"/>
+                    <constraint firstItem="ZXU-3j-iTp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="CuJ-o1-5Jh"/>
+                    <constraint firstAttribute="bottom" secondItem="ndj-qY-Y9Y" secondAttribute="bottom" constant="2.5" id="KFb-G8-07E"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZXU-3j-iTp" secondAttribute="bottom" constant="1" id="Ypu-mt-2fT"/>
+                    <constraint firstAttribute="trailing" secondItem="ndj-qY-Y9Y" secondAttribute="trailing" constant="18" id="hzU-2Y-G6P"/>
+                    <constraint firstItem="ZXU-3j-iTp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="rlj-U6-Y71"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="currencyIncomeLabel" destination="ndj-qY-Y9Y" id="Y0J-sI-DJQ"/>
+                <outlet property="currencyNameLabel" destination="ZXU-3j-iTp" id="p31-GT-cik"/>
+                <outlet property="currencyOutcomeLabel" destination="oXP-LJ-Z04" id="Abm-Ci-w1O"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

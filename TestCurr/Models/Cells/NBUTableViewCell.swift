@@ -9,7 +9,11 @@
 import UIKit
 
 class NBUTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var currencyNameLabel: UILabel!
+    @IBOutlet weak var currencyIncomeLabel: UILabel!
+    @IBOutlet weak var currencyOutcomeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

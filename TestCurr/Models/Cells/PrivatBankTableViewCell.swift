@@ -9,7 +9,11 @@
 import UIKit
 
 class PrivatBankTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var currencySymbolLabel: UILabel!
+    @IBOutlet weak var currencyBuyLabel: UILabel!
+    @IBOutlet weak var currencySellLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
